@@ -1,0 +1,109 @@
+html {
+  font-size: 14px;
+
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 200px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.navbar ul li {
+    position:relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 6px;
+    bottom: 0px;
+    transition: all 0.2s;
+}
+
+.navbar ul li:hover::after {
+    width: 90%;
+} 
+
+.text-center .display-4{
+    font-weight: bolder;
+    font-size: 150px;
+    text-shadow: 2px 4px rgba(0,0,0,0.186);
+}
+
+.username-card {
+    border: none;
+    border-radius: 90px;
+    padding: 15px;
+    background-color: blue;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.056);
+    color: white;
+    margin: 12px;
+}
+
+.inp-label {
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.btn-block {
+    margin-top: 19px;
+    transition: all 0.2s;
+    border: 2px solid blue;
+    border-radius: 6px;
+    width: 20%;
+    left: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    position: relative;
+}
+
+.btn-block:hover {
+    background-color: blue;
+    color: white;
+    width: 100%;
+}
+
+.text-end input{
+    color:white;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 12px;
+    border: none;
+    top: -40px;
+    position: absolute;
+}
+
+.text-end input:hover{
+    opacity: 0.8;
+}
+
+.col-6 ul li {
+    padding: 6px;
+    font-size: 1.1em;
+    margin: 5px;
+}
